@@ -33,14 +33,29 @@ You probably want to edit the homepage. Get started by copying the supplied home
 
 After this, you can edit `layouts/partials/hero.html` and make it awesome.
 
+There is a way to quickly edit the colorscheme : the base style file expects to include a
+similar to `colorschemes/base16-atelier-forest-dark.scss`.
+
 
 ## License
 
 MIT Licensed, see [LICENSE](https://github.com/htdvisser/hugo-base16-theme/blob/master/LICENSE).
 
 
-## Don't forget to thank...
+## Notes
 
-[Steve Francia](https://github.com/spf13) for Hugo.  
-[Chris Kempson](http://chriskempson.com) for the Base16 Eighties Colorscheme.  
+This is a public fork of the original repo by [Hylke Visser] with adding the pagination from[Keane Nguyen]. It's slightly wider than the original themes and includes a few fixes like:
+
+- Fixing the figcaption's text color
+- Adding small borders to separate TOC or captions from the article or the figures
+
+
+## Don't forget to thank...
+[Hylke Visser] for the original theme.
+[Keane Nguyen] for adding the pagination.
+[Steve Francia](https://github.com/spf13) for Hugo.
+[Chris Kempson](http://chriskempson.com) for the Base16 Eighties Colorscheme.
 [Jan T. Sott](https://github.com/idleberg) for the Pygments template.
+
+[Hylke Visser]:https://github.com/htdvisser/
+[Keane Nguyen]:https://github.com/keanemind
