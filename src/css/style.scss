@@ -1,0 +1,576 @@
+@import 'colorschemes/base16-atelier-forest-dark';
+
+$maxWidth: 52em;
+
+/* General Page Layout */
+
+body {
+  margin: 0;
+  background-color: $base00;
+  color: $base07;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.container {
+  max-width: $maxWidth;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $maxWidth) {
+    width: 100%;
+  }
+
+}
+
+div.right {
+  float:right;
+}
+
+div.clearfix {
+  overflow: auto;
+}
+
+
+article.single section,
+.article-list article {
+  background-color: $base07;
+  color: $base00;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  @media (max-width: $maxWidth) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+
+header, footer {
+  background-color: $base01;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: $maxWidth) {
+    margin-top: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9em;
+  color: $base03;
+
+  @media (max-width: $maxWidth) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2rem }
+h2 { font-size: 1.5rem }
+h3 { font-size: 1.25rem }
+h4 { font-size: 1rem }
+h5 { font-size: .875rem }
+h6 { font-size: .75rem }
+
+pre, code {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Header Layout */
+
+header {
+  a.path {
+    color: $base0d;
+  }
+
+  span.caret {
+    color: $base07;
+  }
+}
+
+/* Footer Layout */
+
+footer {
+  a {
+    color: $base03;
+    text-decoration: none;
+  }
+}
+
+/* 404 Page Layout */
+
+.page-not-found {
+  h1 {
+    text-align: center;
+    font-size: 5em;
+
+    @media (max-width: $maxWidth) {
+      font-size: 3em;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3em;
+    color: $base04;
+    margin-bottom: 4rem;
+
+    @media (max-width: $maxWidth) {
+      font-size: 2em;
+    }
+  }
+}
+
+/* Homepage Layout */
+
+.homepage {
+  h1.site-title {
+    text-align: center;
+    font-size: 5em;
+    color: $base0c;
+
+    @media (max-width: $maxWidth) {
+      font-size: 3em;
+    }
+  }
+
+  @media (max-width: $maxWidth) {
+    margin-bottom: 2rem;
+  }
+
+  h1.headline {
+    font-size: 3em;
+    color: $base0a;
+
+    @media (max-width: $maxWidth) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .hero-logo img {
+    width: 100%;
+  }
+
+  section.categories, section.tags {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .category,
+  .category a {
+    color: $base0e;
+  }
+
+  .tag {
+    color: $base0e;
+    margin-right: 2em;
+
+    a {
+      color: $base0e;
+    }
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .nav-left {
+    color: $base0e;
+    margin-left: auto;
+    margin-right: 1%;
+  }
+
+  .nav-right {
+    color: $base0e;
+    margin-left: 1%;
+    margin-right: auto;
+  }
+
+  .nav-hidden {
+    visibility: hidden;
+  }
+}
+
+
+/* Post List Layout */
+
+.article-list {
+  h1.list-title {
+    font-size: 3em;
+    color: $base0a;
+  }
+
+  article {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+
+    h2.headline, h2.headline a {
+      margin-top: 0;
+      color: $base0d;
+    }
+
+    .meta {
+      margin-bottom: 1rem;
+
+      .key {
+        color: $base03;
+      }
+
+      .val {
+        color: $base0e;
+
+        a {
+          color: $base0e;
+        }
+      }
+    }
+
+    section.summary a {
+      color: $base0f;
+    }
+  }
+}
+
+/* Single Post Layout */
+
+article.single {
+  .meta {
+    font-size: 0.9em;
+    text-align: right;
+
+    .key {
+      color: $base03;
+    }
+
+    .val {
+      color: $base0e;
+
+      a {
+        color: $base0e;
+      }
+    }
+
+    @media (max-width: $maxWidth) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  h1.headline {
+    margin-top: 0;
+    font-size: 3em;
+    color: $base0a;
+
+    @media (max-width: $maxWidth) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  section.body {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+    @media (max-width: $maxWidth) {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    /* Highlight Colors */
+
+    h1 { color: $base0d; }
+    h2 { color: $base0b; }
+    h3 { color: $base09; }
+    h4 { color: $base08; }
+    h5 { color: $base02; }
+    h6 { color: $base03; }
+
+    a { color: $base0f; }
+  }
+
+  /* Article Elements */
+
+  * {
+    max-width: 100%;
+  }
+
+  .toc {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    border-top: solid 1px $base03;
+    border-bottom: solid 1px $base03;
+
+    ul {
+      font-weight: bold;
+      line-height: 1.25;
+      margin-top: 1em;
+      margin-bottom: .5em;
+    }
+
+    li {
+      list-style: none;
+      border-left: solid 1px $base05;
+      padding-left: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    // Headings
+    ul li a {
+      font-size: 1.5rem;
+      color: $base0b;
+    }
+
+    ul li ul li a {
+      font-size: 1.25rem;
+      color: $base09;
+    }
+
+    ul li ul li ul li a {
+      font-size: 1rem;
+      color: $base08;
+    }
+
+    ul li ul li ul li ul li a {
+      font-size: .875rem;
+      color: $base02;
+    }
+
+    ul li ul li ul li ul li ul li a {
+      font-size: .75rem;
+      color: $base03;
+    }
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    border-radius: 3px;
+    padding: 2rem;
+  }
+
+  p code {
+    padding: 0.2em 0.5em;
+    border-radius: 3px;
+    background: $base03;
+    color: $base07;
+  }
+
+
+  div.highlight {
+    box-sizing: border-box;
+    max-width: $maxWidth;
+    width: $maxWidth;
+    margin-left: -6rem;
+    margin-right: -6rem;
+    margin-bottom: 1rem;
+    padding: 1em;
+    background-color: $base01;
+    @media (max-width: $maxWidth) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 3px;
+    }
+  }
+
+  figure {
+    box-sizing: border-box;
+    max-width: $maxWidth;
+    width: $maxWidth;
+    margin-left: -6rem;
+    margin-right: -6rem;
+    margin-bottom: 1rem;
+    padding: 1em;
+    background-color: $base01;
+
+    @media (max-width: $maxWidth) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 3px;
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      border-radius: 3px;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: solid 1px $base02;
+
+      h4 {
+        margin-top: 0;
+        text-align: center;
+        font-style: italic;
+        font-weight: normal;
+        color: $base07;
+      }
+
+      p {
+        color: $base06;
+      }
+    }
+  }
+
+  .table-caption {
+    border-top: solid 1px $base03;
+    padding-top: 0.5rem;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    overflow: auto;
+  }
+
+  th,
+  td {
+    padding: .25rem 1rem;
+    line-height: inherit;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $base04;
+  }
+
+  tr:last-child td {
+    border-bottom: 0;
+  }
+
+  th {
+    text-align: left;
+    font-weight: bold;
+    vertical-align: bottom;
+  }
+
+  td { vertical-align: top }
+
+  blockquote {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    padding-left: 1rem;
+    border-left: 5px solid $base0c;
+  }
+
+  hr {
+    border: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: $base04;
+  }
+
+}
+
+/* Pygments template by Jan T. Sott (https://github.com/idleberg) */
+
+pre { background: $base00; color: $base07 }
+
+.highlight .hll { background-color: $base02 }
+.highlight .c { color: $base03 } /* Comment */
+.highlight .err { color: $base08 } /* Error */
+.highlight .k { color: $base0e } /* Keyword */
+.highlight .l { color: $base09 } /* Literal */
+.highlight .n { color: $base07 } /* Name */
+.highlight .o { color: $base0c } /* Operator */
+.highlight .p { color: $base07 } /* Punctuation */
+.highlight .cm { color: $base03 } /* Comment.Multiline */
+.highlight .cp { color: $base03 } /* Comment.Preproc */
+.highlight .c1 { color: $base03 } /* Comment.Single */
+.highlight .cs { color: $base03 } /* Comment.Special */
+.highlight .gd { color: $base08 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gh { color: $base07; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: $base0b } /* Generic.Inserted */
+.highlight .gp { color: $base03; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: $base0c; font-weight: bold } /* Generic.Subheading */
+.highlight .kc { color: $base0e } /* Keyword.Constant */
+.highlight .kd { color: $base0e } /* Keyword.Declaration */
+.highlight .kn { color: $base0c } /* Keyword.Namespace */
+.highlight .kp { color: $base0e } /* Keyword.Pseudo */
+.highlight .kr { color: $base0e } /* Keyword.Reserved */
+.highlight .kt { color: $base0a } /* Keyword.Type */
+.highlight .ld { color: $base0b } /* Literal.Date */
+.highlight .m { color: $base09 } /* Literal.Number */
+.highlight .s { color: $base0b } /* Literal.String */
+.highlight .na { color: $base0d } /* Name.Attribute */
+.highlight .nb { color: $base07 } /* Name.Builtin */
+.highlight .nc { color: $base0a } /* Name.Class */
+.highlight .no { color: $base08 } /* Name.Constant */
+.highlight .nd { color: $base0c } /* Name.Decorator */
+.highlight .ni { color: $base07 } /* Name.Entity */
+.highlight .ne { color: $base08 } /* Name.Exception */
+.highlight .nf { color: $base0d } /* Name.Function */
+.highlight .nl { color: $base07 } /* Name.Label */
+.highlight .nn { color: $base0a } /* Name.Namespace */
+.highlight .nx { color: $base0d } /* Name.Other */
+.highlight .py { color: $base07 } /* Name.Property */
+.highlight .nt { color: $base0c } /* Name.Tag */
+.highlight .nv { color: $base08 } /* Name.Variable */
+.highlight .ow { color: $base0c } /* Operator.Word */
+.highlight .w { color: $base07 } /* Text.Whitespace */
+.highlight .mf { color: $base09 } /* Literal.Number.Float */
+.highlight .mh { color: $base09 } /* Literal.Number.Hex */
+.highlight .mi { color: $base09 } /* Literal.Number.Integer */
+.highlight .mo { color: $base09 } /* Literal.Number.Oct */
+.highlight .sb { color: $base0b } /* Literal.String.Backtick */
+.highlight .sc { color: $base07 } /* Literal.String.Char */
+.highlight .sd { color: $base03 } /* Literal.String.Doc */
+.highlight .s2 { color: $base0b } /* Literal.String.Double */
+.highlight .se { color: $base09 } /* Literal.String.Escape */
+.highlight .sh { color: $base0b } /* Literal.String.Heredoc */
+.highlight .si { color: $base09 } /* Literal.String.Interpol */
+.highlight .sx { color: $base0b } /* Literal.String.Other */
+.highlight .sr { color: $base0b } /* Literal.String.Regex */
+.highlight .s1 { color: $base0b } /* Literal.String.Single */
+.highlight .ss { color: $base0b } /* Literal.String.Symbol */
+.highlight .bp { color: $base07 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: $base08 } /* Name.Variable.Class */
+.highlight .vg { color: $base08 } /* Name.Variable.Global */
+.highlight .vi { color: $base08 } /* Name.Variable.Instance */
+.highlight .il { color: $base09 } /* Literal.Number.Integer.Long */
