@@ -157,6 +157,7 @@ h6 { font-size: .75rem }
 pre, code {
   font-family: inherit;
   font-size: inherit;
+  line-height: initial;
 }
 
 /* Header Layout */
@@ -445,7 +446,6 @@ article.single {
     color: $base07;
   }
 
-
   div.highlight {
     box-sizing: border-box;
     max-width: $maxWidth;
@@ -505,6 +505,13 @@ article.single {
     }
   }
 
+  .src-block-caption {
+    font-style: italic;
+    color: $base01;
+    padding: 0.5em;
+    border-bottom: solid 1px $base03;
+  }
+
   .table-caption {
     border-top: solid 1px $base03;
     padding-top: 0.5rem;
@@ -561,17 +568,17 @@ article.single {
 pre { background: $base00; color: $base07 }
 
 .highlight .hll { background-color: $base02 }
-.highlight .c { color: $base03 } /* Comment */
+.highlight .c { color: $base03; font-style: italic; } /* Comment */
 .highlight .err { color: $base08 } /* Error */
 .highlight .k { color: $base0e } /* Keyword */
 .highlight .l { color: $base09 } /* Literal */
 .highlight .n { color: $base07 } /* Name */
 .highlight .o { color: $base0c } /* Operator */
 .highlight .p { color: $base07 } /* Punctuation */
-.highlight .cm { color: $base03 } /* Comment.Multiline */
-.highlight .cp { color: $base03 } /* Comment.Preproc */
-.highlight .c1 { color: $base03 } /* Comment.Single */
-.highlight .cs { color: $base03 } /* Comment.Special */
+.highlight .cm { color: $base03; font-style: italic; } /* Comment.Multiline */
+.highlight .cp { color: $base03; font-style: italic; } /* Comment.Preproc */
+.highlight .c1 { color: $base03; font-style: italic; } /* Comment.Single */
+.highlight .cs { color: $base03; font-style: italic; } /* Comment.Special */
 .highlight .gd { color: $base08 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
 .highlight .gh { color: $base07; font-weight: bold } /* Generic.Heading */

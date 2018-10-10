@@ -1,3 +1,51 @@
+.base00 {
+  color: #1b1918; }
+
+.base01 {
+  color: #2c2421; }
+
+.base02 {
+  color: #68615e; }
+
+.base03 {
+  color: #766e6b; }
+
+.base04 {
+  color: #9c9491; }
+
+.base05 {
+  color: #a8a19f; }
+
+.base06 {
+  color: #e6e2e0; }
+
+.base07 {
+  color: #f1efee; }
+
+.base08 {
+  color: #f22c40; }
+
+.base09 {
+  color: #df5320; }
+
+.base0a {
+  color: #c38418; }
+
+.base0b {
+  color: #7b9726; }
+
+.base0c {
+  color: #3d97b8; }
+
+.base0d {
+  color: #407ee7; }
+
+.base0e {
+  color: #6666ea; }
+
+.base0f {
+  color: #c33ff3; }
+
 /* General Page Layout */
 body {
   margin: 0;
@@ -91,7 +139,8 @@ h6 {
 
 pre, code {
   font-family: inherit;
-  font-size: inherit; }
+  font-size: inherit;
+  line-height: initial; }
 
 /* Header Layout */
 header a.path {
@@ -335,6 +384,11 @@ article.single {
         color: #f1efee; }
       article.single figure figcaption p {
         color: #e6e2e0; }
+  article.single .src-block-caption {
+    font-style: italic;
+    color: #2c2421;
+    padding: 0.5em;
+    border-bottom: solid 1px #766e6b; }
   article.single .table-caption {
     border-top: solid 1px #766e6b;
     padding-top: 0.5rem; }
@@ -380,7 +434,8 @@ pre {
   background-color: #68615e; }
 
 .highlight .c {
-  color: #766e6b; }
+  color: #766e6b;
+  font-style: italic; }
 
 /* Comment */
 .highlight .err {
@@ -408,19 +463,23 @@ pre {
 
 /* Punctuation */
 .highlight .cm {
-  color: #766e6b; }
+  color: #766e6b;
+  font-style: italic; }
 
 /* Comment.Multiline */
 .highlight .cp {
-  color: #766e6b; }
+  color: #766e6b;
+  font-style: italic; }
 
 /* Comment.Preproc */
 .highlight .c1 {
-  color: #766e6b; }
+  color: #766e6b;
+  font-style: italic; }
 
 /* Comment.Single */
 .highlight .cs {
-  color: #766e6b; }
+  color: #766e6b;
+  font-style: italic; }
 
 /* Comment.Special */
 .highlight .gd {
