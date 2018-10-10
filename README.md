@@ -1,6 +1,6 @@
 # Base16 Theme for Hugo
 
-![Hugo Base16 Theme screenshot](https://raw.githubusercontent.com/htdvisser/hugo-base16-theme/master/images/screenshot.png)
+(Screenshot not up to date)
 
 ## Installation
 
